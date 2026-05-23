@@ -2,7 +2,7 @@ import { EDUCATION } from "../data";
 
 export default function Education() {
   return (
-    <section id="education" className="section-pad-alt">
+    <section id="education" className="section-pad">
       <div className="container">
         <p className="section-label">Education</p>
         <h2 className="section-title" style={{ marginBottom: "3rem" }}>
@@ -19,7 +19,7 @@ export default function Education() {
               bottom: 0,
               width: "1px",
               background:
-                "linear-gradient(to bottom, #cc3333 0%, #8b0000 50%, #252525 100%)",
+                "linear-gradient(to bottom, #cc3333 0%, #252525 50%)",
             }}
           />
 
@@ -37,8 +37,8 @@ export default function Education() {
               <div
                 className="timeline-dot"
                 style={{
-                  background: edu.color,
-                  boxShadow: `0 0 0 5px ${edu.color}18`,
+                  background: edu.color[1],
+                  boxShadow: `0 0 0 5px ${edu.color[1]}18`,
                 }}
               />
 
@@ -67,7 +67,7 @@ export default function Education() {
                     <p
                       style={{
                         fontSize: "13px",
-                        color: edu.color,
+                        color: edu.color[0],
                         fontWeight: 500,
                         marginTop: "3px",
                       }}
@@ -106,7 +106,7 @@ export default function Education() {
                     >
                       <span
                         style={{
-                          color: edu.color,
+                          color: edu.color[0],
                           flexShrink: 0,
                           marginTop: "1px",
                         }}
