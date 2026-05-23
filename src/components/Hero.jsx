@@ -34,12 +34,12 @@ export default function Hero() {
 
   return (
     
-    <section /*  Creation of background  */
+    <section
       id="home"
-      className="dot-grid"
+      className="hero-bg"
       style={{ minHeight: "100vh", display: "flex", alignItems: "center", paddingTop: "60px" }}
     >
-      <div className="container">
+      <div className="container" style={{ backgroundColor: "rgba(0, 0, 0, 0.7)", padding: "3rem" }}>
 
         <h1 className="hero-name fade-up delay-1">
           Juan José<br />
@@ -55,20 +55,21 @@ export default function Hero() {
         </div>
 
         <p className="fade-up delay-2" style={{ fontSize: "1.05rem", color: "#8a8a8a", maxWidth: "520px", lineHeight: 1.75, marginBottom: "2.5rem" }}>
-          Software Engineering student with 3+ years in EDI analysis, SAP environments,
-          and agile leadership — currently building award-winning games on the side.
+          Specialist in the integration and automation of enterprise data flows (EDI) in SAP environments. I combine software engineering with diverse
+           technology stacks to optimize systems, along with agile leadership as a Scrum Master to ensure efficient, 
+           business-aligned delivery.
         </p>
 
         <div className="fade-up delay-3" style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
           <span className="btn-primary" onClick={() => scrollTo("contact")}>Get in touch</span>
-          <span className="btn-ghost" onClick={() => scrollTo("experience")}>See my work →</span>
+          <span className="btn-ghost" onClick={() => scrollTo("career")}>See my work →</span>
         </div>
         <div className="fade-up delay-4" style={{ display: "flex", gap: "3rem", marginTop: "5rem", flexWrap: "wrap" }}>
           {[
-            ["3+", "Years experience"],
+            ["3+", "Years experience on EDI Integration"],
             ["100%", "SLA compliance"],
-            ["2K+", "Users supported"],
-            ["[PendingIMG]", "VIT Award winner"],
+            ["20+", "EDI Integrations projects Delivered"],
+            ["+25%", "Operational process automation"],
           ].map(([val, label]) => (
             <div key={label}>
               <div className="stat-num">{val}</div>
