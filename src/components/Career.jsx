@@ -17,7 +17,7 @@ export default function Career() {
               top: "12px",
               bottom: 0,
               width: "1px",
-              background: "linear-gradient(to bottom, #cc3333 0%, #8b0000 50%, #252525 100%)",
+              background: "linear-gradient(to bottom, #cc3333 0%, #252525 70%)",
             }}
           />
 
@@ -25,7 +25,7 @@ export default function Career() {
             <div key={i} style={{ display: "flex", gap: "1.5rem", marginBottom: "2rem", position: "relative" }}>
               <div
                 className="timeline-dot"
-                style={{ background: exp.color, boxShadow: `0 0 0 5px ${exp.color}18` }}
+                style={{ background: exp.color[1], boxShadow: `0 0 0 5px ${exp.color[1]}18` }}
               />
 
               <div className="card" style={{ flex: 1 }}>
@@ -34,7 +34,7 @@ export default function Career() {
                     <h3 className="font-display" style={{ fontSize: "0.95rem", fontWeight: 600, color: "#f0ece6" }}>
                       {exp.role}
                     </h3>
-                    <p style={{ fontSize: "13px", color: exp.color, fontWeight: 500, marginTop: "3px" }}>
+                    <p style={{ fontSize: "13px", color: exp.color[0], fontWeight: 500, marginTop: "3px" }}>
                       {exp.company}
                     </p>
                   </div>
