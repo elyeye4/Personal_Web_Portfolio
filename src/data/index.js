@@ -85,16 +85,16 @@ export const SKILLS = [
 ];
 
 export const CERTIFICATIONS = [
-  { name: "C1 English Certification", issuer: "Universidad de Costa Rica", abbr: "C1", urlKey: "C1Eng" },
-  { name: "Certified Associate – SAP Business AI", issuer: "SAP", abbr: "SA", urlKey: "SAPAI" },
-  { name: "Scrum Fundamentals Certified", issuer: "ScrumStudy", abbr: "SC", urlKey: "SFC" },
-  { name: "AZ-900 Azure Fundamentals", issuer: "Microsoft", abbr: "AZ", urlKey: "AZ900" },
-  { name: "Video Games Programming", issuer: "Universidad Cenfotec", abbr: "GD", urlKey: "VideoGamesProg" },
+  { name: "C1 English Certification", issuer: "Universidad de Costa Rica", image: "UCR.png", urlKey: "C1Eng" },
+  { name: "Certified Associate – SAP Business AI", issuer: "SAP", image: "SAP Logo 1-1.png", urlKey: "SAPAI" },
+  { name: "Scrum Fundamentals Certified", issuer: "ScrumStudy", image: "scrumstudy.png", urlKey: "SFC" },
+  { name: "AZ-900 Azure Fundamentals", issuer: "Microsoft", image: "ms.png", urlKey: "AZ900" },
+  { name: "Video Games Programming", issuer: "Universidad Cenfotec", image: "cenfotec.png", urlKey: "VideoGamesProg" },
 ];
 export const CERTIFICATES = [
-  { name: "Foundational C# with Microsoft", issuer: "Microsoft", abbr: "C#", urlKey: "CS" },
-  { name: "IT Essentials", issuer: "Cisco", abbr: "IT" },
-  { name: "NDG Linux Unhatched", issuer: "Cisco", abbr: "LX" },
+  { name: "Foundational C# with Microsoft", issuer: "Microsoft", image: "ms.png", urlKey: "CS" },
+  { name: "IT Essentials", issuer: "Cisco", image: "cisco.png" },
+  { name: "NDG Linux Unhatched", issuer: "Cisco", image: "cisco.png" },
 ];
 
 export const EDUCATION = [
@@ -127,7 +127,7 @@ export const CONTACT = {
   linkedin: "https://www.linkedin.com/in/juan-josé-castro-zúñiga-356bb0257",
 };
 
-export const NAV_LINKS = [ "about me", "career", "skills & certs", "projects", "contact"];
+export const NAV_LINKS = [ "About me", "Career", "Skills & certs", "Projects", "Contact"];
 export const URLS = {
   gameproject: "https://nova-planet.itch.io/pigs-revenge",
   C1Eng: "https://media.licdn.com/dms/image/v2/D4E2DAQGnYSgtVTV2FA/profile-treasury-image-shrink_1280_1280/B4EZ4TgkRlIwAY-/0/1778443765152?e=1780113600&v=beta&t=cPPmVcaJ4k9SiQch5eikAYX_jUvzZtNmPcbCUkq2NyQ",

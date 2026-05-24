@@ -18,7 +18,7 @@ const PILLARS = [
 
 export default function About() {
   return (
-    <section id="about me" className="section-pad">
+    <section id="About me" className="section-pad">
       <div className="container">
         <p className="section-label">About me</p>
         <h2 className="section-title" style={{ marginBottom: "2.5rem" }}>
