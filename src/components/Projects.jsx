@@ -9,7 +9,7 @@ const FEATURES = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-pad">
+    <section id="Projects" className="section-pad">
       <div className="container">
         <p className="section-label">Featured project</p>
         <h2 className="section-title" style={{ marginBottom: "0.5rem" }}>

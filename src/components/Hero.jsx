@@ -34,12 +34,12 @@ export default function Hero() {
 
   return (
     
-    <section /*  Creation of background  */
+    <section
       id="home"
-      className="dot-grid"
+      className="hero-bg"
       style={{ minHeight: "100vh", display: "flex", alignItems: "center", paddingTop: "60px" }}
     >
-      <div className="container">
+      <div className="container" style={{ backgroundColor: "rgba(0, 0, 0, 0.7)", padding: "3rem" }}>
 
         <h1 className="hero-name fade-up delay-1">
           Juan José<br />

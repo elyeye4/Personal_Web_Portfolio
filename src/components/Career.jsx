@@ -2,7 +2,7 @@ import { CAREER } from "../data";
 
 export default function Career() {
   return (
-    <section id="career" className="section-pad-alt">
+    <section id="Career" className="section-pad-alt">
       <div className="container">
         <p className="section-label">Career path</p>
         <h2 className="section-title" style={{ marginBottom: "3rem" }}>
