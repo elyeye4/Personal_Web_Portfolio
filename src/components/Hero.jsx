@@ -61,8 +61,8 @@ export default function Hero() {
         </p>
 
         <div className="fade-up delay-3" style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-          <span className="btn-primary" onClick={() => scrollTo("contact")}>Get in touch</span>
-          <span className="btn-ghost" onClick={() => scrollTo("career")}>See my work →</span>
+          <span className="btn-primary" onClick={() => scrollTo("Contact")}>Get in touch</span>
+          <span className="btn-ghost" onClick={() => scrollTo("Career")}>See my work →</span>
         </div>
         <div className="fade-up delay-4" style={{ display: "flex", gap: "3rem", marginTop: "5rem", flexWrap: "wrap" }}>
           {[
