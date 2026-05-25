@@ -30,7 +30,7 @@ export default function Navbar() {
     <>
       <nav className="nav-fixed">
         <div className="nav-logo" onClick={() => { scrollTo("home"); setMenuOpen(false); }}>
-          <span style={{ color: "#b8a082" }}>Back To Top</span>
+          <span style={{ color: "#b8a082" }}>JJCZ</span>
         </div>
 
         <div className="nav-links nav-links-desktop"style={{ display: "flex", gap: "2rem" }}>
