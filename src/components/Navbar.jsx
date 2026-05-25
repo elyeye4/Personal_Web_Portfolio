@@ -7,6 +7,7 @@ const scrollTo = (id) => {
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,7 +21,18 @@ export default function Navbar() {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
+  useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setShowBackToTop(true);
+    } else {
+      setShowBackToTop(false);
+    }
+  };
 
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const handleNavClick = (link) => {
     scrollTo(link);
     setMenuOpen(false);
@@ -29,7 +41,17 @@ export default function Navbar() {
   return (
     <>
       <nav className="nav-fixed">
-        <div className="nav-logo" onClick={() => { scrollTo("home"); setMenuOpen(false); }}>
+        <div
+          className="nav-logo"
+          style={{
+            opacity: showBackToTop ? 1 : 0,
+            pointerEvents: showBackToTop ? "auto" : "none",
+          }}
+          onClick={() => {
+            scrollTo("home");
+            setMenuOpen(false);
+          }}
+        >
           <span style={{ color: "#b8a082" }}>Back To Top</span>
         </div>
 

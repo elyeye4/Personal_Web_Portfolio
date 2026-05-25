@@ -412,6 +412,10 @@ section {
 .open-3 {
   transform: translateY(-7px) rotate(-45deg);
 }
+/* NavBar */
+.nav-logo {
+  transition: opacity 0.3s ease;
+}
 
 /* Overlay full-screen mobile */
 .nav-mobile-overlay {
